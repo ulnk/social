@@ -1,0 +1,9 @@
+{
+    "short_name": "Pickle",
+    "name": "A modernized social media that put you in control.",
+    "icons": [],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

@@ -1,0 +1,104 @@
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    min-width: 20rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0.2rem #00000020;
+    background-color: #1a1a1b;
+    pointer-events: all;
+}
+
+.modal-body h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.15rem;
+    user-select: none;
+}
+
+.modal-body small {
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+    color: #e0e0e0;
+    user-select: none;
+}
+
+.modal-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.75rem;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.modal-input-container span {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    user-select: none;
+}
+
+.modal-input {
+    height: 2rem;
+    /* width: 100%; */
+    padding: 0 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #242526;
+}
+
+.modal-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-weight: 600;
+    user-select: none;
+}
+
+.modal-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.15rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.modal-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 1rem;
+    min-height: 1rem;
+    /* width: max-content; */
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    color: #242526;
+    background-color: #f0f0f0;
+    /* background-color: #73c628; */
+    transition: background-color 150ms ease-in-out;
+}
+
+.modal-button:hover { background-color: #d0d0d0; }
+
+.modal-button.alt { 
+    background-color: #5ba817; 
+    color: #e0e0e0; 
+    justify-content: center; 
+    height: 1.8rem;
+    min-height: 1.8rem;
+    padding: 0 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.modal-button.alt:hover { background-color: #49920a; }
+
+.modal-button.no-bg { background-color: transparent; color: #e0e0e0; font-weight: 400; }
+.modal-button.no-bg:hover { text-decoration: underline; }

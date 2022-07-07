@@ -1,0 +1,45 @@
+.frame {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 1.5rem;
+    min-height: 1.5rem;
+    border-radius: 0.25rem 0.25rem 0 0;
+    background-color: #439914;
+    z-index: 10000;
+}
+
+.frame-title {
+    pointer-events: none;
+    min-width: max-content;
+    margin-left: 0.5rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.frame-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    height: 100%;
+}
+
+.frame-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 1.75rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    transition: background-color 150ms ease-out;
+}
+
+.frame-button:hover { background-color: #ffffff30; }
