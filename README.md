@@ -6,7 +6,7 @@
 * **Fast Desktop App** (install and run without eating up your ram or disk space)
 * **Open Source** (no sketchy business going on here, everything is availiable to see)
 
-![image](https://user-images.githubusercontent.com/93608862/177880655-c7e65473-11ec-41c5-9033-b7771e2b75c1.png)
+![image](https://user-images.githubusercontent.com/93608862/178068506-07003624-fd61-45d0-a5c9-68e6e4fc5858.png)
 
 ### Install Locally
 * **Clone Repository** `gh repo clone ulnk/social`
