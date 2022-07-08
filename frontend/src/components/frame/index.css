@@ -1,4 +1,6 @@
 .frame {
+    position: fixed;
+    width: 100%;
     user-select: none;
     display: flex;
     align-items: center;

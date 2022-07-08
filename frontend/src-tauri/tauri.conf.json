@@ -59,7 +59,7 @@
                 "fullscreen": false,
                 "height": 600,
                 "width": 800,
-                "minHeight": 400,
+                "minHeight": 540,
                 "minWidth": 530,
                 "resizable": true,
                 "decorations": false,

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { HiCog } from 'react-icons/hi';
 import './index.css';
@@ -8,8 +8,10 @@ const MenuBar = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
+    const tauriApp = useSelector(state => state.app.tauriApp);
+
     return (<>
-        <div className="menubar">
+        <div className={`menubar ${tauriApp && 'margin'}`}>
             <section className="menu-block">
                 <span onClick={() => navigate('/app')} className={`menubar-item ${window.location.pathname === '/app' && 'selected'}`}>Home</span>
                 <span onClick={() => navigate('/app/post')} className={`menubar-item ${window.location.pathname === '/app/post' && 'selected'}`}>Post</span>

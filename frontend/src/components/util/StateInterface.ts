@@ -4,5 +4,6 @@ export default interface state {
         username: string | null
         email: string | null
         role: number | null
+        tauriApp: boolean
     }
 }

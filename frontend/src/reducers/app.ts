@@ -34,7 +34,8 @@ const getUser = (tokenArg?: string) => {
 const initialState = (token?: string) => {
     return {
         token: getToken(token),
-        ...getUser(token)
+        ...getUser(token),
+        tauriApp: false,
     }
 }
 
@@ -42,7 +43,9 @@ const initialState = (token?: string) => {
 export default (state = initialState(), action: actionType) => {
     switch (action.type) {
         case 'SET_TOKEN':
-            return { ...state, token: action.payload }
+            return { ...state, token: action.payload };
+        case 'SET_TAURI':
+            return { ...state, tauriApp: action.payload };
         default:
             return state;
     }

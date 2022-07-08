@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+
 import SecureRoute from './util/SecureRoute';
 import UnSecureRoute from './util/UnSecureRoute';
+import state from './util/StateInterface';
 
 import Frame from './frame';
-
-import MainApp from '../pages/MainApp';
-
 import LoginModal from './modals/login';
 import RegisterModal from './modals/register';
 
+import MainApp from '../pages/MainApp';
+
 const App = () => {
+    const dispatch = useDispatch();
+    const tauriApp = useSelector<state>(state => state.app.tauriApp);
+
+    useEffect(() => {
+        if (window.__TAURI_METADATA__) dispatch({ type: 'SET_TAURI', payload: true });
+    }, [dispatch]);
+
     return (<>
-        <Frame />
+        {tauriApp && <Frame />}
         <Routes >
             <Route path="/" element={<>
                 <UnSecureRoute element={<Navigate to="/login" />} />
